@@ -1,0 +1,40 @@
+(name)
+(date)
+
+##Math
+(auto)
+(auto)
+
+##JR Train Stations
+-LT 高尾
+-LT 西八王子
+-LT 八王子
+-LT 豊田
+-LT 日野
+-LT 立川
+-LT 国立
+-LT 西国分寺
+-LT 国分寺
+-LT 武蔵小金井
+-LT 東小金井
+-LT 武蔵境
+-LT 三鷹
+-LT 吉祥寺
+-LT 西荻窪
+-LT 荻窪
+-LT 阿佐ヶ谷
+-LT 高円寺
+-LT 中野
+-LT 新宿
+-LT 四ツ谷
+-LT 御茶ノ水
+-LT 神田
+-LT 東京
+
+##Writing
+Tell me if there is anything you want to do this month.
+===
+===
+===
+===
+===

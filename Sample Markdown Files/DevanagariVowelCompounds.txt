@@ -1,0 +1,45 @@
+(name)
+(date)
+
+# Devanagari Compounds
+-LT अ
+-LT क
+-LT आ
+-LT का
+-LT ॲ
+-LT कॅ
+-LT ऑ
+-LT कॉ
+-LT इ
+-LT कि
+-LT ई
+-LT की
+-LT उ
+-LT कु
+-LT ऊ
+-LT कू
+-LT ऎ
+-LT कॆ
+-LT ए
+-LT के
+-LT ऐ
+-LT कै
+-LT ऒ
+-LT कॊ
+-LT ओ
+-LT को
+-LT औ
+-LT कौ
+-LT ऋ
+-LT कृ
+-LT ॠ
+-LT कॄ
+-LT ऌ
+-LT कॢ
+-LT ॡ
+-LT कॣ
+-LT अं
+-LT कं
+-LT अः
+-LT कः
+-LT क्

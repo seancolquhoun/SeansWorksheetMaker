@@ -1,0 +1,12 @@
+##Hindi Numbers
+-LT शून्य
+-LT एक
+-LT दो
+-LT तीन
+-LT चार
+-LT पांच
+-LT छह
+-LT सात
+-LT आठ
+-LT नौ
+-LT दस

@@ -1,0 +1,63 @@
+(name)
+(date)
+
+#Chinese Poster
+-LT 爺爺
+-LT 奶奶
+-LT 媽媽
+-LT 爸爸
+-LT 姐姐
+-LT 妹妹
+-LT 哥哥
+-LT 弟弟
+-LT 貓
+-LT 家
+-LT 狗
+-LT 魚
+-LT 衛生間
+-LT 黑
+-LT 白
+-LT 紅
+-LT 黃
+-LT 綠
+-LT 藍
+-LT 紫
+-LT 褲子
+-LT 襯衫
+-LT 大衣
+-LT 裙子
+-LT 襪子
+-LT 鞋子
+-LT 老鼠
+-LT 鳥
+-LT 熊
+-LT 鴨
+-LT 魚
+-LT 兔子
+-LT 牛奶
+-LT 果汁
+-LT 麵包
+-LT 雞蛋
+-LT 蘿蔔
+-LT 豆
+-LT 蘋果
+-LT 香蕉
+-LT 眼睛
+-LT 頭
+-LT 耳朵
+-LT 嘴巴
+-LT 手
+-LT 肚子
+-LT 腳
+-LT 早
+-LT 起床
+-LT 洗
+-LT 吃飯
+-LT 刷牙
+-LT 晚
+-LT 睡覺
+
+#Math
+(auto)
+
+

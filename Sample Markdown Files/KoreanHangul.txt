@@ -1,0 +1,44 @@
+(name)
+(date)
+
+#Korean
+-LT ㄱ
+-LT ㄲ
+-LT ㄴ
+-LT ㄷ
+-LT ㄸ
+-LT ㄹ
+-LT ㅁ
+-LT ㅂ
+-LT ㅃ
+-LT ㅅ
+-LT ㅆ
+-LT ㅇ
+-LT ㅈ
+-LT ㅉ
+-LT ㅊ
+-LT ㅋ
+-LT ㅌ
+-LT ㅍ
+-LT ㅎ
+-LT ㅏ
+-LT ㅐ
+-LT ㅑ
+-LT ㅒ
+-LT ㅓ
+-LT ㅔ
+-LT ㅕ
+-LT ㅖ
+-LT ㅗ
+-LT ㅘ
+-LT ㅙ
+-LT ㅚ
+-LT ㅛ
+-LT ㅜ
+-LT ㅝ
+-LT ㅞ
+-LT ㅟ
+-LT ㅠ
+-LT ㅡ
+-LT ㅢ
+-LT ㅣ

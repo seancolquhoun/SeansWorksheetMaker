@@ -1,0 +1,38 @@
+(name)
+(date)
+
+##Math
+-M 13 + 2
+-M 8 + 12
+-M 6 + 19
+-M 14 + 7
+-M 23 + 2
+##Writing
+Write about something that happened today.
+===
+===
+===
+---
+##Reading
+The little bunny had begun to move for the first time since he had been put in his cage. He lifted his tiny nose and inhaled deeply, as if gathering sustenance from the moonlight.
+"He slicked his ears back close to his body, and for the first time," Chester said, "I noticed the peculiar marking on his forehead. What had seemed an ordinary black spot between his ears took on a strange v-shape, which connected with the big black patch that covered his back and each side of his neck. It looked as if he was wearing a coat ... no, more like a cape than a coat."
+Through the silence had drifted the strains of a remote and exotic music.
+"I could have sworn it was a gypsy violin," Chester told me. "I thought perhaps a caravan was passing by, so I ran to the window."
+I remembered my mother telling me something about caravans when I was a puppy. But for the life of me, I couldn't remember what.
+"What's a caravan?" I asked, feeling a little stupid.
+"A caravan is a band of gypsies traveling through the forest in their wagons," Chester answered.
+"Ah, yes." It was coming back to me now. "Station wagons?"
+"No, covered wagons! The gypsies travel all through the land, setting up camps around great bonfires, doing magical tricks, and sometimes, if you cross their palms with a piece of silver, they'll tell your fortune."
+"You mean if I gave them a fork, they'd tell my fortune?" I asked, breathlessly.
+
+##Good Morning
+-LT Καλημέρα σας
+-LT صباح الخير
+-LT 早上好
+-LT Bonjour
+-LT בוקר טוב
+-LT सुप्रभात
+-LT Buenos días
+-LT Guten Morgen
+-LT 좋은 아침이에요
+-LT Доброе утро

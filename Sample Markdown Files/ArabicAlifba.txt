@@ -1,0 +1,32 @@
+(name)
+(date)
+
+# Arabic Alifba
+-LT ا
+-LT ب
+-LT ت
+-LT ث
+-LT ج
+-LT ح
+-LT خ
+-LT د
+-LT ذ
+-LT ر
+-LT ز
+-LT س
+-LT ش
+-LT ص
+-LT ض
+-LT ط
+-LT ظ
+-LT ع
+-LT غ
+-LT ف
+-LT ق
+-LT ك
+-LT ل
+-LT م
+-LT ن
+-LT ه
+-LT و
+-LT ي

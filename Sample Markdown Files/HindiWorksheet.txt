@@ -1,0 +1,46 @@
+(name)
+(date)
+
+# Hindi
+## Greetings
+-LT सुप्रभात
+-LT नमस्कार
+-LT शुभ संध्या
+-LT शुभ रात्रि
+-LT मेरा नाम ईरेन है
+-LT तुम्हारा नाम क्या है?
+-LT आपसे मिलकर खुशी हुई ।
+-LT नमस्ते
+-LT धन्यवाद
+-LT मुझे माफ कर दो
+-LT क्षमा कीजिय!
+-LT अलविदा
+
+## Hindi Numbers
+-LT शून्य
+-LT एक
+-LT दो
+-LT तीन
+-LT चार
+-LT पांच
+-LT छह
+-LT सात
+-LT आठ
+-LT नौ
+-LT दस
+
+## Math
+-MV 10<br />&times; 6
+-MV 0<br />- 6
+-MV 2<br />&times; 0
+-MV 10<br />+ 2
+-MV 10<br />+ 11
+-MV 2<br />&times; 8
+-MV 6<br />+ 9
+-MV 24<br />&divide; 6
+-MV 1<br />- 7
+-MV 1<br />- 15
+-MV 9<br />&divide; 1
+-MV 5<br />&times; 2
+-MV 4<br />&times; 7
+-MV 7<br />&times; 4

@@ -1,0 +1,61 @@
+(name)
+(date)
+
+# Hebrew Alephbet
+-LT א‬
+-LT ב‬
+-LT ג‬
+-LT ד‬
+-LT ה‬
+-LT ו‬
+-LT ז‬
+-LT ח‬
+-LT ט‬
+-LT י‬
+-LT כ‬
+-LT ך‬
+-LT ל‬
+-LT מ‬
+-LT ם‬
+-LT נ‬
+-LT ן‬
+-LT ס‬
+-LT ע‬
+-LT פ‬
+-LT ף‬
+-LT צ‬
+-LT ץ‬
+-LT ק‬
+-LT ר‬
+-LT ש‬
+-LT ת‬
+-LT ﭏ
+
+-LT א‬
+-LT ב‬
+-LT ג‬
+-LT ד‬
+-LT ה‬
+-LT ו‬
+-LT ז‬
+-LT ח‬
+-LT ט‬
+-LT י‬
+-LT כ‬
+-LT ך‬
+-LT ל‬
+-LT מ‬
+-LT ם‬
+-LT נ‬
+-LT ן‬
+-LT ס‬
+-LT ע‬
+-LT פ‬
+-LT ף‬
+-LT צ‬
+-LT ץ‬
+-LT ק‬
+-LT ר‬
+-LT ש‬
+-LT ת‬
+-LT ﭏ

@@ -1,0 +1,80 @@
+(name)
+(date)
+
+##Hebrew
+-LT א‬
+-LT בּ‬
+-LT ב‬
+-LT ג‬
+-LT ד‬
+-LT ה‬
+-LT ו‬
+-LT ז‬
+-LT ח‬
+-LT ט‬
+-LT י‬
+-LT כּ‬
+-LT כ‬
+-LT ךּ‬
+-LT ך‬
+-LT ל‬
+-LT מ‬
+-LT ם‬
+-LT נ‬
+-LT ן‬
+-LT ס‬
+-LT ע‬
+-LT פּ‬
+-LT פ‬
+-LT ף‬
+-LT צ‬
+-LT ץ‬
+-LT ק‬
+-LT ר‬
+-LT שׁ‬
+-LT שׂ‬
+-LT תּ‬
+-LT ת‬
+
+##Math
+-MV 4<br />- 15
+-MV 1<br />+ 6
+-MV 13<br />- 14
+-MV 3<br />- 6
+-MV 8<br />- 12
+-MV 2<br />- 10
+-MV 8<br />- 8
+
+-MV 14<br />- 10
+-MV 3<br />× 10
+-MV 4<br />× 3
+-MV 3<br />- 8
+-MV 6<br />× 9
+-MV 7<br />+ 8
+-MV 8<br />+ 1
+
+##Bushu
+-LT 一
+-LT 丨
+-LT 丶
+-LT 丿
+-LT 乙
+-LT 亅
+-LT 二
+-LT 亠
+-LT 人
+-LT 亻
+-LT 𠆢
+-LT 入
+-LT 八
+-LT ハ
+-LT 儿
+-LT 丷
+-LT 冫
+-LT 凵
+-LT 匚
+-LT 冂
+
+##Reading
+October arrived, spreading a damp chill over the grounds and into the castle. Madam Pomfrey, the nurse, was kept busy by a sudden spate of colds among the staff and students. Her Pepperup potion worked instantly, though it left the drinker smoking at the ears for several hours afterward. Ginny Weasley, who had been looking pale, was bullied into taking some by Percy. The steam pouring from under her vivid hair gave the impression that her whole head was on fire. 
+Raindrops the size of bullets thundered on the castle windows for days on end; the lake rose, the flower beds turned into muddy streams, and Hagrid's pumpkins swelled to the size of garden sheds. Oliver Wood's enthusiasm for regular training sessions, however, was not dampened, which was why Harry was to be found, late one stormy Saturday afternoon a few days before Halloween, returning to Gryffindor Tower, drenched to the skin and splattered with mud. 

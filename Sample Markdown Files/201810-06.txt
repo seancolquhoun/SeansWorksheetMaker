@@ -1,0 +1,42 @@
+(name)
+(date)
+
+##Reading
+Tokyo has 39 million residents, 50% more people than any other urban area, with a $2.5 trillion economy larger than that of any other city; if it were a country, Tokyo would be the 8th largest economy in the world. Tokyo is often referred to as a city but is officially known and governed as a "metropolitan prefecture", which differs from and combines elements of a city and a prefecture, a characteristic unique to Tokyo. 
+
+##Math
+(auto)
+
+##JR Train Stations on the Chuo Line
+-LT 高尾
+-LT 西八王子
+-LT 八王子
+-LT 豊田
+-LT 日野
+-LT 立川
+-LT 国立
+-LT 西国分寺
+-LT 国分寺
+-LT 武蔵小金井
+-LT 東小金井
+-LT 武蔵境
+-LT 三鷹
+-LT 吉祥寺
+-LT 西荻窪
+-LT 荻窪
+-LT 阿佐ヶ谷
+-LT 高円寺
+-LT 中野
+-LT 新宿
+-LT 四ツ谷
+-LT 御茶ノ水
+-LT 神田
+-LT 東京
+
+##Writing
+Tell me what food you like best.
+===
+===
+===
+===
+===

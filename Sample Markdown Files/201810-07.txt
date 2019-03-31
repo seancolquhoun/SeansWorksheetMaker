@@ -1,0 +1,36 @@
+(name)
+(date)
+
+##Hindi Numbers
+-LT शून्य
+-LT एक
+-LT दो
+-LT तीन
+-LT चार
+-LT पांच
+-LT छह
+-LT सात
+-LT आठ
+-LT नौ
+-LT दस
+
+##What do you like to play with your friends?
+===
+===
+===
+===
+
+##Math
+(auto)
+(auto)
+
+##Second Grade Kanji
+-LT 数
+-LT 多
+-LT 少
+-LT 万
+-LT 半
+-LT 形
+-LT 太
+-LT 細
+-LT 広

@@ -1,0 +1,13 @@
+(name)
+(date)
+##Thank you
+-LT 감사합니다
+-LT תודה
+-LT 謝謝
+-LT Vielen Dank
+-LT شكرا لكم
+-LT Gracias
+-LT teşekkür ederim
+-LT Je vous remercie
+-LT 多謝
+-LT धन्यवाद
