@@ -1,0 +1,407 @@
+<head>
+<title>Worksheet Maker</title>
+</head>
+
+<style type="text/css">
+	::-webkit-scrollbar { 
+		display: none; 
+	}
+	body {
+		background-color: #eee;
+		/*background-image: url('background.jpg');*/
+		background-attachment: fixed;
+		background-size: contain;
+		margin: 0px;
+		font-family: sans-serif;
+		line-height: 1.5em;
+	}
+	#pageDisplay {
+		width: 210mm;
+		height: 297mm;
+		background-color: #fff;
+		padding: 2em;
+		margin: 0px auto;
+	}
+	textarea#pageCode {
+		width: 34em;
+		padding: 1em;
+		font-size: .8em;
+		line-height: 1.5em;
+		color: #adadad;
+		border: none;
+		border-radius: .5em;
+		height: 50em;
+		position: fixed;
+		top: 10px;
+		right: -480px;
+		background-color: #c9ced1;
+		animation-duration: .2s;
+		animation-name: closePageCode;
+	}
+	textarea#pageCode.open {
+		right: 10px;
+		color: #494949;
+		animation-duration: .2s;
+		animation-name: openPageCode;
+	}
+
+	@keyframes openPageCode {
+		from {
+			right: -480px;
+			color: #adadad;
+		}
+
+		to {
+			right: 10px;
+			color: #494949;
+		}
+	}
+
+	@keyframes closePageCode {
+		from {
+			right: 10px;
+			color: #494949;
+		}
+
+		to {
+			right: -480px;
+			color: #adadad;
+		}
+	}
+
+	ul { clear: both; }
+	h1, h2, h3, p, hr { clear: both; font-family: sans-serif; }
+	h1 {
+		line-height: 1.2em;
+	}
+	h2 {
+		font-size: 1.2em;
+		opacity: .6;
+	}
+	h3 {
+		font-size: 1em;
+		opacity: .3;
+	}
+	ul {
+		list-style-type: none;
+		padding: 0px;
+	}
+	li {
+		float: left;
+		margin: 10px 10px 20px 0px;
+		border: 1px solid #ddd;
+		padding: 15px;
+		font-size: 2em;
+		page-break-inside: avoid;
+	}
+
+	table, td, th {
+		border-collapse: collapse;
+		opacity: .8;
+	}
+
+	td, th {
+		border: 1px solid #bbb;
+		font-size: .8em;
+		padding: .8em;
+		text-align: left;
+	}
+
+	@media print {
+		body {
+			background-color: #fff;
+			background-image: none;
+		}
+		div#pageCodeWrapper {
+			display: none;
+		}
+		#pageDisplay {
+			width: 210mm;
+			height: 297mm;
+			margin: 0em;
+		}
+
+		tr {
+			page-break-inside: avoid;
+		}
+	}
+
+	.worksheetValue {
+		color: #ddd;
+		font-size: .8em;
+		width: 200px;
+		float: right;
+		text-align: left;
+		border: 1px solid #ddd;
+		padding: .5em;
+		border-radius: .4em;
+		height: 7em;
+	}
+	.worksheetMetadata { 
+		display: inline-block; 
+		text-align: right; 
+		padding-right: 20em; 
+		border-bottom: 1px solid #ddd; 
+		margin-top: .5em;
+	}
+	.languageTracing { 
+		font-size: 4em; 
+		color: #eee; 
+		margin: 10px 10px 10px 0px;
+	}
+	.languageTracing p {
+		font-family: serif;
+		margin: 0px;
+		padding: .5em .2em;
+	}
+	.math { font-size: 1em;
+		padding: 1em 1em 3em 1em;
+	}
+	.mathhorizontal p { 
+		margin: 0;
+		padding-right: 2em;
+	}
+	.mathvertical p { 
+		margin: 0;
+		text-align: right;
+		border-bottom: 1px solid;
+		margin-bottom: 2em;
+		min-width: 2em;
+		line-height: 1.2em;
+	}
+	.reading {
+		font-size: 1em;
+		line-height: 1.5em;
+	}
+	hr.collegeRuled {
+		margin-top: 2em;
+		opacity: .3;
+	}
+	.adult {
+		font-size: 2em;
+	}
+
+	p.worksheetDate {
+		font-size: .8em;
+	}
+
+	:focus {
+		outline-style: none;
+	}
+
+	table, td, th {
+		border: 1px solid #aaa;
+		border-collapse: collapse;
+		text-align: left;
+	}
+
+	td, th {
+		padding: 10px;
+	}
+</style>
+
+<div id="pageCodeWrapper"><textarea id="pageCode" oninput="syncCodeAndDisplay()">
+(name) 
+makes a name field at the top
+- Typing a hyphen makes a bullet
+|Enclosing|content|in|pipes|makes tables
+Starting lines with -LT makes large content you can trace
+# Typing ###, ##, or # creates h3, h2, and h1 headers respectively
+Typing only 
+(auto)
+into a line creates math problems automatically
+Press ENTER (again) if your changes do not update immediately
+
+(Hint: focus in this box and hit enter now. Then one more time to see the math problems)
+
+When ready, print to paper or PDF. This text box will not print.
+
+</textarea></div>
+<div id="pageDisplay"></div>
+
+<script type="text/javascript">
+
+var syncCodeAndDisplay = function(){
+	var pageCode = document.getElementById("pageCode"), pageDisplay = document.getElementById("pageDisplay");
+	var parsedPageCode = "";
+	// parsedPageCode += createHeader();
+	parsedPageCode += parsePageCode(pageCode.value);
+	pageDisplay.innerHTML = parsedPageCode;
+}
+
+var createHeader = function(){
+	var pageDisplayLines = [];
+	pageDisplayLines.push('<div id="pageHeader">');
+	pageDisplayLines.push('<p class="worksheetValue">When completed, mark or place sticker here.</p>');
+	pageDisplayLines.push('</div>');
+	return pageDisplayLines.join('\n');
+}
+
+var autoFill = function(autofillString){
+	var parameterArray = autofillString.split(" ");
+	var problems = [];
+
+	var numberOfProblems = 7;
+	var upperLimit = 15;
+
+	var operators = ['+','-','&times;','-','&times;','&divide;'];
+	var mathProblems = [];
+
+	for (var i=0, len=numberOfProblems; i < len; i++) {
+		var operator = operators[Math.floor(Math.random() * (operators.length))];
+
+		//Training wheels for multiplication; remove when ready
+		if (operator == '&times;' || operator == '&divide;'){
+			upperLimit = 10;
+		}
+		//Training wheels for multiplication; remove when ready
+
+		var digit01 = Math.floor(Math.random() * (upperLimit + 1)), digit02 = Math.floor(Math.random() * (upperLimit + 1))
+		if (operator == '&divide;'){
+			var product = digit01 * digit02;
+			var mathProblem = "-MV " + product + "<br />" + operator + " " + digit01;
+		} else { 
+			var mathProblem = "-MV " + digit01 + "<br />" + operator + " " + digit02;
+		}
+
+		mathProblems.push(mathProblem);
+	}
+	console.log(mathProblems);
+	var pageCode = document.getElementById("pageCode");
+	console.log(autofillString);
+	pageCode.value = pageCode.value.replace(autofillString, mathProblems.join('\n'));
+}
+
+var parsePageCode = function(pageCode){
+	var pageDisplayLines = [];
+	var lines = pageCode.split('\n');
+	console.log(lines);
+	var listIsOpen = false;
+	var tableIsOpen = false;
+
+	for (line in lines) {
+		// Close out open lists if this item is not a list item
+		if (listIsOpen && !lines[line].startsWith("-")) {
+			pageDisplayLines.push('</ul>');
+			listIsOpen = false;
+		}
+
+		if (tableIsOpen && !lines[line].startsWith('|')) {
+			console.log("CLOSE TABLE");
+			tableIsOpen = false;
+			pageDisplayLines.push('</table>');
+			continue;
+		}
+
+		if (lines[line] === "") {
+			pageDisplayLines.push('<br />')
+			continue;
+		}
+
+		if (lines[line].startsWith("(header)")) {
+			pageDisplayLines.push(createHeader());
+			continue;
+		}
+		if (lines[line].startsWith("(name)")) {
+			pageDisplayLines.push('<p class="worksheetName worksheetMetadata">Name:</p>');
+			continue;
+		}
+		if (lines[line].startsWith("(date)")) {
+			pageDisplayLines.push('<p class="worksheetDate worksheetMetadata">Date:</p>');
+			continue;
+		}
+		if (lines[line].startsWith("(auto)")) {
+			autoFill(lines[line]);
+			continue;
+		}
+
+		if (lines[line].startsWith("###")) {
+			pageDisplayLines.push('<h3 class="worksheetSection">' + lines[line].replace("###", '') + '</h3>');
+			continue;
+		}
+
+		if (lines[line].startsWith("##")) {
+			pageDisplayLines.push('<h2 class="worksheetSection">' + lines[line].replace("##", '') + '</h2>');
+			continue;
+		}
+
+		if (lines[line].startsWith("#")) {
+			pageDisplayLines.push('<h1 id="worksheetTitle">' + lines[line].replace("#", '') + '</h1>');
+			continue;
+		}
+		if (lines[line].startsWith("---")) {
+			pageDisplayLines.push('<hr />');
+			continue;
+		}
+		if (lines[line].startsWith("===")) {
+			pageDisplayLines.push('<hr class="collegeRuled"/>');
+			continue;
+		}
+		if (lines[line].startsWith("-")) {
+			var lineString = lines[line];
+ 			var displayClass = "";
+			if (lineString.startsWith("-MH")) {
+				displayClass = "mathhorizontal";
+				lineString = lineString.replace("-MH", '');
+			} else if (lineString.startsWith("-MV")) {
+				displayClass = "mathvertical";
+				lineString = lineString.replace("-MV", ''); 			
+			} else if (lineString.startsWith("-M")) {
+				displayClass = "math";
+				lineString = lineString.replace("-M", '');
+			} else if (lineString.startsWith("-LTA")) {
+				displayClass = "languageTracing adult";
+				lineString = lineString.replace("-LTA", '');
+			} else if (lineString.startsWith("-LT")) {
+				displayClass = "languageTracing";
+				lineString = lineString.replace("-LT", '');
+			} else if (lineString.startsWith("-L")) {
+				displayClass = "language";
+				lineString = lineString.replace("-L", '');
+			}
+			if (!listIsOpen) {
+				listIsOpen = true;
+				pageDisplayLines.push('<ul>');
+			}
+			pageDisplayLines.push('<li class="' + displayClass + '"><p>' + lineString + '</p></li>');
+			continue;
+		}
+
+		// Handle tables
+		if (lines[line].startsWith('|')) {
+			if (!tableIsOpen) {
+				pageDisplayLines.push('<table>');
+				pageDisplayLines.push('<tr><th>' + lines[line].replace('|', '').replace(/\|/g, '</th><th>') + '</th></tr>');
+				tableIsOpen = true;
+				console.log("tableIsOpen: " + tableIsOpen)
+				continue
+			}
+			pageDisplayLines.push('<tr><td>' + lines[line].replace('|', '').replace(/\|/g, '</td><td>') + '</td></tr>');
+			continue
+		}
+
+		else pageDisplayLines.push('<p class="reading">' + lines[line] + '</p>');
+		console.log(lines[line]);
+	}
+	return pageDisplayLines.join('\n');
+}
+
+var openPageCode = function() {
+	if (document.getElementById('pageCode').className.indexOf('open') == -1){
+		document.getElementById('pageCode').className += ' open';
+		document.getElementById('pageCode').className = document.getElementById('pageCode').className.replace(' closed', '');
+		document.getElementById('pageCode').focus();
+	} else {
+		document.getElementById('pageCode').className = document.getElementById('pageCode').className.replace(' closed', '').replace(' open', ' closed');
+	}
+}
+
+document.addEventListener('keydown', (event) => {
+  const keyName = event.key;
+  console.log(keyName);
+  if (event.metaKey && event.altKey) {
+	  openPageCode();
+  }
+});
+openPageCode();
+</script>
